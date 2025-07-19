@@ -1,0 +1,254 @@
+[
+  {
+    "ID": 2,
+    "Creado_en": "2024-01-02T00:00:00Z",
+    "Nombre_cientifico": "Loxodonta africana",
+    "Familia": "Elephantidae",
+    "Dieta": "Herbívoro",
+    "Peso_kg": 92,
+    "Habitat": "Sabana africana"
+  },
+  {
+    "ID": 3,
+    "Creado_en": "2024-01-03T00:00:00Z",
+    "Nombre_cientifico": "Canis lupus",
+    "Familia": "Canidae",
+    "Dieta": "Carnívoro",
+    "Peso_kg": 91,
+    "Habitat": "Bosques templados y tundras"
+  },
+  {
+    "ID": 4,
+    "Creado_en": "2024-01-04T00:00:00Z",
+    "Nombre_cientifico": "Giraffa camelopardalis",
+    "Familia": "Giraffidae",
+    "Dieta": "Herbívoro",
+    "Peso_kg": 92,
+    "Habitat": "Sabana africana"
+  },
+  {
+    "ID": 6,
+    "Creado_en": "2024-01-06T00:00:00Z",
+    "Nombre_cientifico": "Ursus maritimus",
+    "Familia": "Ursidae",
+    "Dieta": "Carnívoro",
+    "Peso_kg": 97,
+    "Habitat": "Regiones árticas"
+  },
+  {
+    "ID": 7,
+    "Creado_en": "2024-01-07T00:00:00Z",
+    "Nombre_cientifico": "Macropus rufus",
+    "Familia": "Macropodidae",
+    "Dieta": "Herbívoro",
+    "Peso_kg": 81,
+    "Habitat": "Zonas áridas de Australia"
+  },
+  {
+    "ID": 8,
+    "Creado_en": "2024-01-08T00:00:00Z",
+    "Nombre_cientifico": "Aptenodytes forsteri",
+    "Familia": "Spheniscidae",
+    "Dieta": "Carnívoro",
+    "Peso_kg": 77,
+    "Habitat": "Costas antárticas"
+  },
+  {
+    "ID": 9,
+    "Creado_en": "2024-01-09T00:00:00Z",
+    "Nombre_cientifico": "Hippopotamus amphibius",
+    "Familia": "Hippopotamidae",
+    "Dieta": "Herbívoro",
+    "Peso_kg": 54,
+    "Habitat": "Ríos y lagos africanos"
+  },
+  {
+    "ID": 11,
+    "Creado_en": "2024-01-11T00:00:00Z",
+    "Nombre_cientifico": "Ailuropoda melanoleuca",
+    "Familia": "Ursidae",
+    "Dieta": "Herbívoro",
+    "Peso_kg": 87,
+    "Habitat": "Bosques de bambú"
+  },
+  {
+    "ID": 12,
+    "Creado_en": "2024-01-12T00:00:00Z",
+    "Nombre_cientifico": "Vulpes vulpes",
+    "Familia": "Canidae",
+    "Dieta": "Carnívoro",
+    "Peso_kg": 56,
+    "Habitat": "Bosques y zonas rurales"
+  },
+  {
+    "ID": 13,
+    "Creado_en": "2024-01-13T00:00:00Z",
+    "Nombre_cientifico": "Equus quagga",
+    "Familia": "Equidae",
+    "Dieta": "Herbívoro",
+    "Peso_kg": 85,
+    "Habitat": "Sabana africana"
+  },
+  {
+    "ID": 14,
+    "Creado_en": "2024-01-14T00:00:00Z",
+    "Nombre_cientifico": "Ursus arctos",
+    "Familia": "Ursidae",
+    "Dieta": "Carnívoro",
+    "Peso_kg": 75,
+    "Habitat": "Bosques y montañas"
+  },
+  {
+    "ID": 15,
+    "Creado_en": "2024-01-15T00:00:00Z",
+    "Nombre_cientifico": "Syncerus caffer",
+    "Familia": "Bovidae",
+    "Dieta": "Herbívoro",
+    "Peso_kg": 57,
+    "Habitat": "Sabana y pantanos"
+  },
+  {
+    "ID": 16,
+    "Creado_en": "2024-01-16T00:00:00Z",
+    "Nombre_cientifico": "Lutra lutra",
+    "Familia": "Mustelidae",
+    "Dieta": "Carnívoro",
+    "Peso_kg": 68,
+    "Habitat": "Ríos y lagos"
+  },
+  {
+    "ID": 17,
+    "Creado_en": "2024-01-17T00:00:00Z",
+    "Nombre_cientifico": "Antilope cervicapra",
+    "Familia": "Bovidae",
+    "Dieta": "Herbívoro",
+    "Peso_kg": 77,
+    "Habitat": "Praderas y sabanas"
+  },
+  {
+    "ID": 18,
+    "Creado_en": "2024-01-18T00:00:00Z",
+    "Nombre_cientifico": "Lynx lynx",
+    "Familia": "Felidae",
+    "Dieta": "Carnívoro",
+    "Peso_kg": 94,
+    "Habitat": "Bosques fríos"
+  },
+  {
+    "ID": 19,
+    "Creado_en": "2024-01-19T00:00:00Z",
+    "Nombre_cientifico": "Rhinoceros unicornis",
+    "Familia": "Rhinocerotidae",
+    "Dieta": "Herbívoro",
+    "Peso_kg": 71,
+    "Habitat": "Praderas y pantanos"
+  },
+  {
+    "ID": 20,
+    "Creado_en": "2024-01-20T00:00:00Z",
+    "Nombre_cientifico": "Vultur gryphus",
+    "Familia": "Cathartidae",
+    "Dieta": "Carnívoro",
+    "Peso_kg": 77,
+    "Habitat": "Montañas andinas"
+  },
+  {
+    "ID": 21,
+    "Creado_en": "2024-01-21T00:00:00Z",
+    "Nombre_cientifico": "Phascolarctos cinereus",
+    "Familia": "Phascolarctidae",
+    "Dieta": "Herbívoro",
+    "Peso_kg": 68,
+    "Habitat": "Bosques de eucalipto"
+  },
+  {
+    "ID": 22,
+    "Creado_en": "2024-01-22T00:00:00Z",
+    "Nombre_cientifico": "Panthera onca",
+    "Familia": "Felidae",
+    "Dieta": "Carnívoro",
+    "Peso_kg": 69,
+    "Habitat": "Selvas tropicales"
+  },
+  {
+    "ID": 23,
+    "Creado_en": "2024-01-23T00:00:00Z",
+    "Nombre_cientifico": "Equus ferus",
+    "Familia": "Equidae",
+    "Dieta": "Herbívoro",
+    "Peso_kg": 54,
+    "Habitat": "Estepas"
+  },
+  {
+    "ID": 24,
+    "Creado_en": "2024-01-24T00:00:00Z",
+    "Nombre_cientifico": "Canis aureus",
+    "Familia": "Canidae",
+    "Dieta": "Carnívoro",
+    "Peso_kg": 58,
+    "Habitat": "Sabana y desiertos"
+  },
+  {
+    "Nombre_cientifico": "Ciconia Abdimii",
+    "Familia": "Aves",
+    "Dieta": "Insectos",
+    "Peso_kg": 1.4,
+    "Habitat": "Sabana Africana",
+    "ID": 26,
+    "Creado_en": "2025-06-28T02:49:01+02:00"
+  },
+  {
+    "ID": 27,
+    "Creado_en": "2025-07-14T22:29:40.324Z",
+    "Nombre_cientifico": "Panthera onca",
+    "Familia": "Felidae",
+    "Dieta": "Carnívoro",
+    "Peso_kg": 69,
+    "Habitat": "Selvas tropicales"
+  },
+  {
+    "ID": 28,
+    "Creado_en": "2025-07-14T22:34:11.695Z",
+    "Nombre_cientifico": "Panthera onca",
+    "Familia": "Felidae",
+    "Dieta": "Carnívoro",
+    "Peso_kg": 69,
+    "Habitat": "Selvas tropicales"
+  },
+  {
+    "ID": 29,
+    "Creado_en": "2025-07-16T01:15:03.273Z",
+    "Nombre_cientifico": "Panthera Roci",
+    "Familia": "Felidae",
+    "Dieta": "Carnívoro",
+    "Peso_kg": 69,
+    "Habitat": "Selvas tropicales"
+  },
+  {
+    "ID": 32,
+    "Creado_en": "2025-07-16T02:38:39.922Z",
+    "Nombre_cientifico": "Panthera Roci",
+    "Familia": "Felidae",
+    "Dieta": "Carnívoro",
+    "Peso_kg": 69,
+    "Habitat": "Selvas tropicales"
+  },
+  {
+    "ID": 33,
+    "Creado_en": "2025-07-19T02:16:45.068Z",
+    "Nombre_cientifico": "Panthera Roci",
+    "Familia": "Felidae",
+    "Dieta": "Carnívoro",
+    "Peso_kg": 69,
+    "Habitat": "Selvas tropicales"
+  },
+  {
+    "ID": 34,
+    "Creado_en": "2025-07-19T05:04:45.299Z",
+    "Nombre_cientifico": "Panthera Roci",
+    "Familia": "Felidae",
+    "Dieta": "Carnívoro",
+    "Peso_kg": 69,
+    "Habitat": "Selvas tropicales"
+  }
+]

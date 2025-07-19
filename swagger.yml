@@ -1,0 +1,275 @@
+openapi: 3.0.4
+info:
+  title: API de Animales
+  description: |
+    Servicio web donde puedes agregar, obtener y consultar animales.
+    También permite mostrar tweets relacionados con los animales.
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:3000
+
+paths:
+  /api/animales:
+    post:
+      tags:
+        - animales
+      summary: Agrega un nuevo animal
+      description: Registra un nuevo animal y lo guarda en el archivo JSON.
+      operationId: crearAnimal
+      requestBody:
+        description: Objeto animal a crear
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NuevoAnimal'
+      responses:
+        '200':
+          description: Animal agregado correctamente
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  mensaje:
+                    type: string
+                    example: Animal agregado correctamente
+                  animal:
+                    $ref: '#/components/schemas/Animal'
+        '400':
+          description: Error en los datos enviados
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AnimalResError'
+        '500':
+          description: Error inesperado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+    get:
+      tags:
+        - animales
+      summary: Trae la lista de animales
+      description: Trae la lista de animales registrados en el sistema con paginación.
+      operationId: getAnimalesList
+      parameters:
+        - in: query
+          name: page
+          schema:
+            type: integer
+            example: 1
+          description: Página de la lista (cada una contiene 10 animales).
+        - in: query
+          name: limit
+          schema:
+            type: integer
+            example: 10
+          description: Número de elementos por página.
+      responses:
+        '200':
+          description: Lista de animales
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  animales:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Animal'
+        '500':
+          description: Error inesperado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /api/animales/{id}:
+    delete:
+      tags:
+        - animales
+      summary: Elimina un animal por ID
+      description: Elimina un animal del archivo JSON según su identificador único.
+      operationId: eliminarAnimal
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID del animal a eliminar
+          schema:
+            type: integer
+            example: 1
+      responses:
+        '200':
+          description: Animal eliminado correctamente
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  mensaje:
+                    type: string
+                    example: Animal eliminado correctamente
+        '404':
+          description: Animal no encontrado
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    example: Animal no encontrado
+        '500':
+          description: Error inesperado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /media:
+    get:
+      summary: Obtener tweets de un usuario
+      description: Retorna un objeto con el nombre de usuario y una lista de tweets recientes.
+      operationId: obtenerTweets
+      parameters:
+        - in: query
+          name: usuario
+          required: true
+          schema:
+            type: string
+            example: BioDivLibrary
+          description: Nombre del usuario de Twitter del cual se obtendrán los tweets.
+        - in: query
+          name: limite
+          required: false
+          schema:
+            type: integer
+            example: 5
+          description: Número máximo de tweets a retornar.
+      responses:
+        '200':
+          description: Tweets obtenidos correctamente
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  user:
+                    type: string
+                    example: BioDivLibrary
+                  tweets:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          example: "1791445769214410752"
+                        text:
+                          type: string
+                          example: "Exploring biodiversity through historic images."
+                        created_at:
+                          type: string
+                          format: date-time
+                          example: "2024-07-18T10:00:00.000Z"
+        '429':
+          description: Demasiadas solicitudes al servidor externo (rate limit excedido)
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: string
+                    example: TOO_MANY_REQUESTS
+                  message:
+                    type: string
+                    example: Se han hecho demasiadas solicitudes. Intente más tarde.
+
+components:
+  schemas:
+    NuevoAnimal:
+      type: object
+      required:
+        - Nombre_cientifico
+        - Familia
+        - Dieta
+        - Peso_kg
+        - Habitat
+      properties:
+        Nombre_cientifico:
+          type: string
+          example: Panthera onca
+        Familia:
+          type: string
+          example: Felidae
+        Dieta:
+          type: string
+          example: Carnívoro
+        Peso_kg:
+          type: number
+          example: 69
+        Habitat:
+          type: string
+          example: Selvas tropicales
+
+    Animal:
+      type: object
+      required:
+        - ID
+        - Creado_en
+        - Nombre_cientifico
+        - Familia
+        - Dieta
+        - Peso_kg
+        - Habitat
+      properties:
+        ID:
+          type: integer
+          example: 1
+        Creado_en:
+          type: string
+          format: date-time
+          example: 2024-01-01T00:00:00Z
+        Nombre_cientifico:
+          type: string
+          example: Panthera onca
+        Familia:
+          type: string
+          example: Felidae
+        Dieta:
+          type: string
+          example: Carnívoro
+        Peso_kg:
+          type: number
+          example: 69
+        Habitat:
+          type: string
+          example: Selvas tropicales
+
+    AnimalResError:
+      type: object
+      required:
+        - error
+      properties:
+        error:
+          type: array
+          items:
+            type: string
+            example: El campo 'Nombre_cientifico' es obligatorio
+
+    Error:
+      type: object
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: string
+        message:
+          type: string
