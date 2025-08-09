@@ -1,20 +1,20 @@
 openapi: 3.0.4
 info:
   title: API de Animales
+  version: 1.0.0
   description: |
     Servicio web donde puedes agregar, obtener y consultar animales.
     También permite mostrar tweets relacionados con los animales.
-  Equipo The Crumbs
-    Brenda Rojas
-    Maria Cuevas
-    Luis Castillo
-    Kevin de la Cruz
-    Crissel Rodriguez
-    Jarely Vargas
-  version: 1.0.0
-  
     
-    [The Crumbs](https://github.com/Quik2205/the-crumbs-3)
+   ### Equipo The Crumbs
+    -Brenda Rojas
+    -Maria Cuevas
+    -Luis Castillo
+    -Kevin de la Cruz
+    -Crissel Rodriguez
+    -Jarely Vargas
+ 
+   [The Crumbs](https://github.com/Quik2205/the-crumbs-3)
   
 
 servers:
